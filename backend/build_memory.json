@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "app_type": "",
+  "app_name": "",
+  "api_contract": [],
+  "frontend_endpoints": [],
+  "backend_endpoints": [],
+  "components": [],
+  "known_issues": [],
+  "roadmap": [],
+  "next_action": "",
+  "focus_cycle": 2,
+  "history": [],
+  "updated_at": "2026-08-05T21:00:03.658572+00:00",
+  "stage": "launch",
+  "goal": "First 100 visits (now: 0/100 in 30d)",
+  "goal_why": "the product is live but nobody is seeing it — distribution is the bottleneck"
+}
