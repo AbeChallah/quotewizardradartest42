@@ -1,0 +1,123 @@
+{
+  "app_type": "saas_dashboard",
+  "app_name": "QuoteWizardRadarTest42",
+  "brand_name": "QuoteWizardRadar",
+  "tagline": "AI-powered quotes in 30 seconds, boosting close rates by 35%",
+  "primary_color": "#0A3D62",
+  "accent_color": "#F39C12",
+  "secondary_color": "#F8F9FA",
+  "font_heading": "Sora",
+  "font_body": "DM Sans",
+  "voice_tone": "confident, efficient, professional, innovative",
+  "logo_concept": "A lightning bolt combined with a checkmark inside a radar circle",
+  "brand_values": [
+    "Speed",
+    "Precision",
+    "Professionalism"
+  ],
+  "sections": [
+    "hero",
+    "how-it-works",
+    "features",
+    "pricing",
+    "testimonials",
+    "cta"
+  ],
+  "backend_resources": [
+    "quotes",
+    "customers",
+    "jobs",
+    "metrics"
+  ],
+  "features": [
+    "Smart Form",
+    "AI Quote Generation",
+    "One-Click Acceptance",
+    "Job Scheduling"
+  ],
+  "pricing_tiers": [
+    "Pro: $59/mo — Unlimited quotes, AI generation, job scheduling"
+  ],
+  "target_customer": "B2B service companies (IT, HVAC, plumbing, landscaping)",
+  "key_metric": "quote generation time reduced from hours to 30 seconds",
+  "hero_stats": [
+    {
+      "value": "30s",
+      "label": "Average quote generation time"
+    },
+    {
+      "value": "35%",
+      "label": "Increase in close rate"
+    },
+    {
+      "value": "24/7",
+      "label": "Quote availability"
+    }
+  ],
+  "api_contract": [
+    {
+      "method": "GET",
+      "path": "/api/metrics",
+      "response": "{\"totalQuotes\": number, \"avgTime\": number, \"closeRate\": number}",
+      "description": "Returns dashboard KPIs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/quotes",
+      "response": "[{id, customer, status, createdAt}]",
+      "description": "Lists all quotes"
+    },
+    {
+      "method": "POST",
+      "path": "/api/quotes",
+      "response": "{id, customer, pdfUrl, status}",
+      "description": "Creates a new quote from smart form data"
+    },
+    {
+      "method": "GET",
+      "path": "/api/quotes/:id",
+      "response": "{id, customer, details, pdfUrl}",
+      "description": "Fetches a single quote"
+    },
+    {
+      "method": "POST",
+      "path": "/api/quotes/:id/accept",
+      "response": "{id, status: \"accepted\", jobId}",
+      "description": "Accepts a quote and triggers job scheduling"
+    },
+    {
+      "method": "GET",
+      "path": "/api/jobs",
+      "response": "[{id, customer, scheduledDate, status}]",
+      "description": "Lists scheduled jobs"
+    },
+    {
+      "method": "GET",
+      "path": "/api/customers",
+      "response": "[{id, name, company, email}]",
+      "description": "Fetches customer list"
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "m1",
+      "title": "Core dashboard + metrics endpoint",
+      "status": "pending"
+    },
+    {
+      "id": "m2",
+      "title": "Smart form and AI quote generation",
+      "status": "pending"
+    },
+    {
+      "id": "m3",
+      "title": "One-click acceptance and job scheduling",
+      "status": "pending"
+    },
+    {
+      "id": "m4",
+      "title": "Customer management and history",
+      "status": "pending"
+    }
+  ]
+}
